@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['logged'])) {
+        header("Location: /realtywebsite/admin.php");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
